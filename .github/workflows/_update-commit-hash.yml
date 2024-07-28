@@ -24,7 +24,7 @@ env:
 
 jobs:
   update-xla-commit-hash:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2

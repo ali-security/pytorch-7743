@@ -13,14 +13,12 @@
 name: Close stale pull requests
 
 on:
-  schedule:
     # Run hourly.
-    - cron: 30 * * * *
 
 jobs:
   stale:
     if: ${{ github.repository == 'pytorch/pytorch' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/github-script@v6

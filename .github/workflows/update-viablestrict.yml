@@ -1,8 +1,6 @@
 name: Update viable/strict
 
 on:
-  schedule:
-    - cron: 17,47 * * * *
   workflow_dispatch:
 
 concurrency:
@@ -20,7 +18,7 @@ jobs:
           token: ${{ secrets.MERGEBOT_TOKEN }}
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: MatteoH2O1999/setup-python@v4
         with:
           python-version: 3.8
           architecture: x64

@@ -16,7 +16,7 @@ jobs:
   release:
     if: ${{ github.repository == 'pytorch/pytorch' }}
     name: Create Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: zhouzhuojie/checkout@05b13c9a0d21f08f6d5e64a1d5042246d13619d9
         with:

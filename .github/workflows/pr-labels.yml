@@ -8,14 +8,14 @@ on:
 
 jobs:
   is-properly-labeled:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Set up python
-        uses: actions/setup-python@v2
+        uses: MatteoH2O1999/setup-python@v4
         with:
           cache: pip
           cache-dependency-path: |

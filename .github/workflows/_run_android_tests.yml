@@ -9,7 +9,7 @@ defaults:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Setup miniconda
         uses: conda-incubator/setup-miniconda@v2

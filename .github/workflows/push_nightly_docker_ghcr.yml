@@ -1,8 +1,6 @@
 name: docker-release-builds
 on:
-  schedule:
     # Push the nightly docker daily at 1 PM UTC
-    - cron: '0 13 * * *'
   # Trigger when we modify something related to these images
   pull_request:
     paths:

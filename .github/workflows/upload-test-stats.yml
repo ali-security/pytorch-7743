@@ -10,7 +10,7 @@ jobs:
   # the conclusion field in the github context is sometimes null
   # solution adapted from https://github.com/community/community/discussions/21090#discussioncomment-3226271
   get_workflow_conclusion:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       conclusion: ${{ fromJson(steps.get_conclusion.outputs.data).conclusion }}
     steps:
